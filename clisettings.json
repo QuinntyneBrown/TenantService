@@ -1,0 +1,96 @@
+{
+  "isRoot": true,
+  "endpointType": 0,
+  "minimal": false,
+  "prefix": "app",
+  "idFormat": 0,
+  "idDotNetType": 0,
+  "isMicroserviceArchitecture": false,
+  "projects": [],
+  "rootDirectory": "C:\\projects\\TenantService",
+  "solutionName": "TenantService",
+  "solutionFileName": "TenantService.sln",
+  "apiFullPath": "C:\\projects\\TenantService\\src\\TenantService.Api\\TenantService.Api.csproj",
+  "rootNamespace": "TenantService",
+  "domainNamespace": "TenantService.Core",
+  "applicationNamespace": "TenantService.Core",
+  "infrastructureNamespace": "TenantService.Infrastructure",
+  "apiNamespace": "TenantService.Api",
+  "domainDirectory": "C:\\projects\\TenantService\\src\\TenantService.SharedKernel",
+  "applicationDirectory": "C:\\projects\\TenantService\\src\\TenantService.Core",
+  "infrastructureDirectory": "C:\\projects\\TenantService\\src\\TenantService.Infrastructure",
+  "apiDirectory": "C:\\projects\\TenantService\\src\\TenantService.Api",
+  "unitTestsDirectory": "C:\\projects\\TenantService\\tests\\TenantService.UnitTests",
+  "testingDirectory": "C:\\projects\\TenantService\\tests\\TenantService.Testing",
+  "appDirectories": [],
+  "buildingBlocksCoreNamespace": "BuildingBlocks.Core",
+  "buildingBlocksEventStoreNamespace": "BuildingBlocks.EventStore",
+  "sourceFolder": "src",
+  "testFolder": "tests",
+  "dbContextName": "TenantServiceDbContext",
+  "port": 5000,
+  "sslPort": 5001,
+  "plugins": null,
+  "entities": [],
+  "resources": [
+    {
+      "properties": [
+        {
+          "accessModifier": "public",
+          "type": "Guid",
+          "accessors": [
+            {
+              "accessModifier": null,
+              "type": 0
+            },
+            {
+              "accessModifier": "private",
+              "type": 1
+            }
+          ],
+          "name": "TenantId",
+          "required": true,
+          "key": true
+        },
+        {
+          "accessModifier": "public",
+          "type": "string",
+          "accessors": [
+            {
+              "accessModifier": null,
+              "type": 0
+            },
+            {
+              "accessModifier": "private",
+              "type": 1
+            }
+          ],
+          "name": "Name",
+          "required": true,
+          "key": false
+        },
+        {
+          "accessModifier": "public",
+          "type": "string",
+          "accessors": [
+            {
+              "accessModifier": null,
+              "type": 0
+            },
+            {
+              "accessModifier": "private",
+              "type": 1
+            }
+          ],
+          "name": "Key",
+          "required": true,
+          "key": false
+        }
+      ],
+      "entities": [],
+      "name": "Tenant",
+      "idPropertyName": "TenantId",
+      "idPropertyType": "Guid"
+    }
+  ]
+}
