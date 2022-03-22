@@ -1,0 +1,25 @@
+.app-typography .app-root {
+
+  .app-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    place-items: center start;
+    cursor: pointer;
+  }
+}
+
+
+.app-typography .app-root .app-header-title {
+  text-transform: uppercase;
+  margin:0;
+  padding:0;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #000;
+  padding: 0px 10px;
+  letter-spacing: 3px;
+  user-select: none;
+}
+

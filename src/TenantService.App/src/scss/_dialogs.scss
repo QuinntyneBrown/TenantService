@@ -1,0 +1,9 @@
+.app-dialog-panel {
+  .mat-dialog-container {
+    padding:30px;
+
+    [app-title-bar] {
+      margin-bottom: 30px;
+    }
+  }
+}

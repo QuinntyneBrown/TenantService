@@ -1,11 +1,6 @@
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using TenantService.Core;
 using TenantService.Core.Interfaces;
 
 namespace TenantService.Core
@@ -22,11 +17,11 @@ namespace TenantService.Core
     }
     public class CreateTenantRequest: IRequest<CreateTenantResponse>
     {
-        public TenantDto Tenant { get; set; }
+        public TenantDto? Tenant { get; set; }
     }
     public class CreateTenantResponse: ResponseBase
     {
-        public TenantDto Tenant { get; set; }
+        public TenantDto? Tenant { get; set; }
     }
     public class CreateTenantHandler: IRequestHandler<CreateTenantRequest, CreateTenantResponse>
     {

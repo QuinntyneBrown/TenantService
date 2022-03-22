@@ -25,5 +25,6 @@
   <Target Name="EndpointPostBuildTarget" AfterTargets="Build">
     <Exec Command="dotnet tool restore" />
     <Exec Command="dotnet tool run swagger tofile --serializeasv2  --output &quot;$(ProjectDir)swagger.json&quot; &quot;$(TargetDir)$(TargetFileName)&quot; v1" />
+    <Exec Command="endpoint post-api-build" />
   </Target>
 </Project>
